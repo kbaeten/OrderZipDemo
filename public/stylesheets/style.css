@@ -1,3 +1,36 @@
-h1 {
-  color: blue;
+.first {
+  color: #203731;
+}
+.second {
+  color: #FFB612;
+}
+body {
+
+  background-color: #7e7e7e;
+  color: white;
+  font-family: Helvetica;
+}
+h2 {
+  color: black;
+}
+#landingPage {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: none;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  background-color: #203731;
+  color: #FFB612;
+  border-style: none;
+}
+.landingInput {
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-style: none;
+  border: none;
 }
