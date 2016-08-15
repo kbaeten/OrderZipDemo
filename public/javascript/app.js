@@ -28,7 +28,7 @@ app.controller('mainController', function($scope, $http){
   $scope.stories = function() {
     $http({
       method: "GET",
-      url: "http://www.pivotaltracker.com/services/v5/projects/1786315/stories",
+      url: "https://www.pivotaltracker.com/services/v5/projects/1786315/stories",
       headers: {'X-TrackerToken': 'a7906909bb1350ebcd24558a1edbab3e'}
     })
     .then(function(data){
