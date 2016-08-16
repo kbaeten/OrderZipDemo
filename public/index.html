@@ -12,10 +12,14 @@
 
 <body ng-controller="mainController">
   <header>
-    <a href="?#/"><span id="order" class="title">Order</span><span id="zip" class="title">Zip</span></a>
-    <a href="?#/info"><span class="link">Info</span></a>
-    <a href="?#/userstories"><span class="link" ng-click="stories()">User Stories</span></a>
-    <a href="?#/wireframes"><span class="link">Wireframes</span></a>
+    <div>
+      <a href="?#/"><span id="order" class="title">Order</span><span id="zip" class="title">Zip</span></a>
+    </div>
+    <div id="navLinks">
+      <a href="?#/info"><span class="link">Info</span></a>
+      <a href="?#/userstories"><span class="link" ng-click="stories()">User Stories</span></a>
+      <a href="?#/wireframes"><span class="link">Wireframes</span></a>
+    </div>
   </header>
   <main class="main-content" ng-view>
 
