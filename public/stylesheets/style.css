@@ -81,3 +81,33 @@ a {
 }
 
 /*Wireframe page styling*/
+
+#wireframesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#wireframesContainer img {
+  max-width: 80vw;
+  height: auto;
+  margin-bottom: 50px;
+  border: 2px solid #D95C02;
+}
+#wireframesTitle {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#wire {
+  color: #D95C02;
+  font-size: 32px;
+}
+#frames {
+  color: white;
+  font-size: 32px;
+}
