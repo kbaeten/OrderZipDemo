@@ -1,6 +1,6 @@
 body {
   background-image: url(/images/BeerCooler.jpg);
-  background-size: cover;
+  background-size: 100vw;
   width: 100vw;
   margin: 0;
   font-family: 'Cabin', sans-serif;
@@ -79,6 +79,39 @@ a {
   font-size: 18px;
   cursor: pointer;
 }
+#signInButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+/*Info page styling*/
+
+#infoPageContainer {
+  color: white;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 30px;
+}
+#infoTitle {
+  text-align: center;
+}
+#infoPageContainer h1 {
+  color: white;
+  margin: 20px;
+}
+#infoPageContainer p {
+  margin: 20px;
+}
+#infoPageContainer ul {
+  padding-bottom: 40px;
+}
+.orange{
+  color: #D95C02;
+}
+
 
 /*Wireframe page styling*/
 
