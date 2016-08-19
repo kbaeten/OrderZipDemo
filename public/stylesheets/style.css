@@ -101,6 +101,7 @@ a {
 #infoPageContainer h1 {
   color: white;
   margin: 20px;
+  margin-bottom: 5px;
 }
 #infoPageContainer p {
   margin: 20px;
@@ -111,7 +112,65 @@ a {
 .orange{
   color: #D95C02;
 }
+hr {
+  border-color: #D95C02;
+  width: 85vw;
+  margin-bottom: 30px;
+  display: flex;
+  margin-left: 20px;
+}
 
+/*user stories styling*/
+#userstoriesTitle {
+  text-align: center;
+  font-size: 32px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80vw;
+  background-color:  rgba(0, 0, 0, .75);
+  border: 1px solid #D95C02;
+}
+#user {
+  color: white;
+}
+#stories {
+  color: #D95C02;
+}
+.storyContainers {
+  width: 80vw;
+  height: auto;
+  color: white;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .75);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #D95C02;
+}
+.storyScore {
+  display: flex;
+  justify-content: space-between;
+}
+.storyContainers hr {
+  border-color: #D95C02;
+  width: 75vw;
+  margin-bottom: 20px;
+  display: flex;
+  margin-left: 20px;
+}
+.storyDiv {
+  font-size: 18px;
+  width: 60vw;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.scoreDiv {
+  font-size: 18px;
+  width: 10vw;
+  margin-top: 10px;
+}
 
 /*Wireframe page styling*/
 

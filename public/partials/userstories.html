@@ -1,3 +1,11 @@
-<div id="infoPage">
-  userstories
-</div>
+  <div id="userstoriesTitle"><span id="user">User</span><span id="stories">stories</span></div>
+  <div class="storyContainers" ng-repeat="story in view.stories">
+    <div class="storyScore">
+      <div class="storyDiv">{{ story.name }}</div>
+      <div class="scoreDiv">Score: {{ story.estimate }}</div>
+    </div>
+    <hr align="left">
+    <ul ng-repeat="task in view.tasks">
+      <li>{{ task.description }}</li>
+    </ul>
+  </div>
