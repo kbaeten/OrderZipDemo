@@ -105,9 +105,11 @@ a {
 }
 #infoPageContainer p {
   margin: 20px;
+  margin-right: 20px;
 }
 #infoPageContainer ul {
   padding-bottom: 40px;
+  padding-right: 20px;
 }
 .orange{
   color: #D95C02;

@@ -22,8 +22,7 @@ app.config(['$routeProvider', function($routeProvider) {
 
 app.controller('storiesController', function($scope, $http){
   $scope.view = {};
-  $scope.view.storyIds = [];
-  $scope.view.tasks = [];
+  $scope.view.storySet = {};
   $http({
     method: "GET",
     url: "https://www.pivotaltracker.com/services/v5/projects/1786315/stories",
@@ -32,21 +31,20 @@ app.controller('storiesController', function($scope, $http){
   .then(function(data){
     $scope.view.stories = data.data;
     for (var i = 0; i < $scope.view.stories.length; i++) {
-      $scope.view.storyIds.push($scope.view.stories[i].id);
-    }
-    for (var i = 0; i < $scope.view.storyIds.length; i++) {
-      console.log("Hello");
+      let currentStory = $scope.view.stories[i];
+      let storyId = currentStory.id;
+      $scope.view.storySet[storyId] = {estimate: currentStory.estimate, name: currentStory.name}
       $http({
         method: "GET",
-        url: "https://www.pivotaltracker.com/services/v5/projects/1786315/stories/" + $scope.view.storyIds[i] + "/tasks",
+        url: "https://www.pivotaltracker.com/services/v5/projects/1786315/stories/" + storyId + "/tasks",
         headers: {'X-TrackerToken': 'a7906909bb1350ebcd24558a1edbab3e'}
       })
       .then(function(data){
-        $scope.view.tasks.push[i] = data.data;
-      });
+        $scope.view.storySet[storyId].tasks = data.data;
+        console.log($scope.view.storySet);
+      })
     }
   });
-  console.log($scope.view);
 });
 
 app.directive('landing', function() {
