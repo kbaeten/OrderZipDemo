@@ -141,6 +141,17 @@ hr {
 #stories {
   color: #D95C02;
 }
+#userstoriesTitle p {
+  color: white;
+  font-size: 16px;
+}
+#userstoriesTitle a {
+  text-decoration: none;
+  color: white;
+}
+#userstoriesTitle a:hover{
+  color: #D95C02;
+}
 .storyContainers {
   width: 80vw;
   height: auto;
